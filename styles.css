@@ -1,0 +1,152 @@
+:root {
+    --primary-green: #00E676;
+    --primary-blue: #2979FF;
+    --dark-bg: #1C2128;
+    --text-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+header {
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.company-name {
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    background-color: #e0e0e0;
+}
+
+.hero {
+    background-color: var(--primary-green);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: var(--text-color);
+}
+
+.features {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: var(--primary-green);
+}
+
+.features h2 {
+    margin-bottom: 3rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1rem;
+}
+
+.shield {
+    background-color: #B3E5FC;
+}
+
+.lightning {
+    background-color: #FFE0B2;
+}
+
+.checkmark {
+    background-color: #C8E6C9;
+}
+
+footer {
+    background-color: var(--dark-bg);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
